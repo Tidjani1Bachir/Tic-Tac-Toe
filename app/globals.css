@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+}
+main {
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+
+
+}
+.gameboard {
+  width: 300px;
+  height: 300px;
+  border: solid 1px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
+  background-color: white;
+  order: 2;
+}
+.X-O-Box {
+border:1px solid black;
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.turn {
+position: absolute;
+bottom:5%;
+color: white;
+}
+.winning-messege {
+position: absolute;
+bottom:5%;
+color: white;
+}
+.cross {
+  color: aqua;
+}
+.circle {
+  color: rgba(211, 12, 12, 0.731);
+}
+.cross,.circle {
+  font-size:80px ;
+  font-weight: bold;
+}
